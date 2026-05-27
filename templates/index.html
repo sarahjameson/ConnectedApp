@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Smart Plant Monitor</title>
+
+    <meta http-equiv="refresh" content="5">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+    <div class="overlay">
+
+        <div class="container">
+
+            <h1>🌿 Smart Plant Monitor</h1>
+
+            <div class="card">
+
+                <h2>Moisture Level</h2>
+
+                <div class="moisture">
+                    {{ moisture }}%
+                </div>
+
+                {% if moisture < 40 %} <div class="status dry">
+                    Plant needs water!
+            </div>
+            {% else %}
+            <div class="status good">
+                Soil moisture is good
+            </div>
+            {% endif %}
+
+        </div>
+
+    </div>
+
+    </div>
+
+</body>
+
+</html>
