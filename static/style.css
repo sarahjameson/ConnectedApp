@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("https://images.unsplash.com/photo-1497250681960-ef046c08a56e");
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+.overlay {
+    background-color: rgba(255,255,255,0.85);
+    min-height: 100vh;
+    padding: 40px;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    color: #2e7d32;
+    font-size: 48px;
+}
+
+.card {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    margin-top: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.moisture {
+    font-size: 64px;
+    color: #2e7d32;
+    margin: 20px 0;
+}
+
+.status {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.good {
+    color: green;
+}
+
+.dry {
+    color: red;
+}
