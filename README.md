@@ -33,6 +33,10 @@ The project demonstrates IoT concepts including networking, cloud communication,
 
 ![Blynk Dashboard](images/blynk-dashboard.png)
 
+## Demo Video
+
+A demonstration video of the Smart Plant Monitor project can be viewed here: https://www.youtube.com/watch?v=Ib6NVVMzulM
+
 ## How to Run
 
 1. Clone/download the repository
