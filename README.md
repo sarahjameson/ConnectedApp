@@ -2,9 +2,11 @@
 
 #### Student Name: *Sarah Jameson*   Student ID: *20118734*
 
-This project is an Internet of Things (IoT) system designed to monitor plant health using a Raspberry Pi. The system will collect data such as soil moisture and temperature (using sensors or simulated data), process the readings locally, and send the data over a network to a web-based dashboard.
+This project is an IoT-based Smart Plant Monitoring System developed using a Raspberry Pi, Flask and Blynk.
 
-The application will analyse the data using simple logic (e.g. threshold checks) to determine the plant’s condition (e.g. “Healthy”, “Low Moisture”, “Needs Water”). The system will display real-time readings and provide alerts when the plant requires watering or when environmental conditions are not suitable.
+The system simulates soil moisture readings and displays them on both a Flask web dashboard and a Blynk IoT dashboard. Threshold logic is used to determine whether the plant requires watering.
+
+The project demonstrates IoT concepts including networking, cloud communication, Python processing, web technologies and dashboard visualisation.
 
 ## Tools, Technologies and Equipment
 
@@ -16,7 +18,40 @@ The application will analyse the data using simple logic (e.g. threshold checks)
 - CSV
 - Visual Studio Code
 - Git and GitHub
+- HTML and CSS
+- Blynk
 
-## Project Repository
-https://github.com/sarahjameson/ConnectedApp
+## System Architecture
+
+![Architecture Diagram](images/diagram.png)
+
+## Flask Dashboard
+
+![Flask Dashboard](images/flask-dashboard.png)
+
+## Blynk Dashboard
+
+![Blynk Dashboard](images/blynk-dashboard.png)
+
+## How to Run
+
+1. Clone/download the repository
+2. Install dependencies: `pip install -r requirements.txt`
+3. Set the Blynk authentication token as an environment variable
+4. Run: `python3 app.py`
+5. Open the Flask dashboard in a browser
+
+## Sensor Information
+
+A capacitive soil moisture sensor was selected as the intended physical input device. However, because the Raspberry Pi does not include built-in analog input support, an ADC such as the MCP3008 is required to read the sensor accurately.
+
+Due to hardware limitations before the submission deadline, simulated moisture values were used while maintaining the intended IoT architecture and dashboard functionality.
+
+## Future Improvements
+
+- Real sensor integration using MCP3008
+- Automatic watering system
+- Database storage
+- Historical moisture graphs
+- Mobile notifications
 
